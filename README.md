@@ -64,18 +64,27 @@ Se desarrollaron y compararon tres algoritmos de clasificación:
 - Random Forest
 - XGBoost
 
-Se utilizaron procedimientos de entrenamiento y evaluación para comparar su capacidad predictiva.
+Para evaluar y optimizar los modelos se utilizaron las siguientes técnicas:
+
+- **StratifiedKFold:** validación cruzada estratificada para mantener la proporción de las clases en cada partición.
+- **GridSearchCV:** búsqueda exhaustiva de combinaciones de hiperparámetros.
+- **RandomizedSearchCV:** búsqueda aleatoria de combinaciones de hiperparámetros dentro de los espacios definidos.
+
+El objetivo fue comparar diferentes enfoques y seleccionar configuraciones adecuadas según su desempeño predictivo.
 
 ### 4. Evaluación de modelos
 
 El desempeño se analizó mediante métricas de clasificación, incluyendo:
 
+- Accuracy
+- Precision
+- Recall
 - F1-score
 - ROC-AUC
-- Precision y Recall
 - Matriz de confusión
+- Curvas ROC y Precision-Recall
 
-También se analizaron los errores de clasificación para comprender sus posibles implicancias en decisiones comerciales.
+Además, se analizaron los falsos positivos y falsos negativos para interpretar las consecuencias de los errores de clasificación desde una perspectiva comercial.
 
 ## Resultados y aplicación al negocio
 
